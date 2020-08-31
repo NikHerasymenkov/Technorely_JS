@@ -1,4 +1,3 @@
-//task1
 var myGLobal = 10;
 
 
@@ -20,15 +19,3 @@ function fun2() {
 }
 
 fun2();
-
-//task 2
-function myLocalScope() {
-    'use strict'
-    var myVar;
-    console.log('inside myLocalScope', myVar);
-}
-
-myLocalScope();
-console.log('outside myLocalScope', myVar);
-
-
