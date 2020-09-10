@@ -6,9 +6,9 @@ import {Circle} from "./Circle";
 const shape = new Shape({
     x: 0,
     y: 0,
-    width: 210,
-    height: 200,
-    color: 'black'
+    width: 200,
+    height:200,
+    color:'black'
 })
 const circle = new Circle({
     x: 100,
@@ -22,13 +22,13 @@ const triangle = new Triangle({
     color: 'red'
 })
 const square = new Square({
-    x: 0,
-    y: 0,
+    x: 10,
+    y: 10,
     width: 50,
     height: 50,
     color: 'blue'
 })
 shape.draw()
-circle.circleDraw()
-triangle.triangleDraw()
-square.squareDraw()
+circle.draw()
+triangle.draw()
+square.draw()

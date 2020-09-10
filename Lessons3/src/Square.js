@@ -3,20 +3,17 @@ import {Shape} from "./Shape";
 export class Square extends Shape {
     constructor(options) {
         super(options);
-        this._x = options._x
-        this._y = options._y
-        this._color = options._color
+        this._x = options.x
+        this._y = options.y
+        this._color = options.color
     }
 
-    squareDraw = () => {
-        const ctx = document.querySelector('canvas')
-            .getContext('2d')
-        if (ctx) {
-            ctx.beginPath()
-            ctx.fillStyle = this.color
-            ctx.fillRect(this.x, this.y, this.width, this.height, this.color)
-            ctx.closePath()
-            ctx.fill()
-        }
-    }
+    draw = () => {
+this._getContext()
+        this.ctx.beginPath()
+        this.ctx.fillStyle = this._color
+        this.ctx.fillRect(this._x, this._y, this._width, this._height, this._color)
+        this.ctx.closePath()
+        this.ctx.fill()
+}
 }

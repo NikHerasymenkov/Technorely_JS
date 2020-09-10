@@ -9,18 +9,17 @@ export class Circle extends Shape {
         this._radios = options.radios;
 
     }
+draw=()=>{
+this._getContext()
+        this.ctx.beginPath()
+        this.ctx.moveTo(this._x, this._y);
+        this.ctx.arc(this._x, this._y, this._radios, 0, Math.PI * 2, false)
+        this.ctx.fillStyle = this._color;
+        this.ctx.closePath()
+        this.ctx.fill()
 
-    circleDraw = () => {
-        const ctx = document.querySelector('canvas')
-            .getContext('2d')
-        if (ctx) {
-            ctx.beginPath()
-            ctx.moveTo(this._x, this._y);
-            ctx.arc(this._x, this._y, this._radios, 0, Math.PI * 2, false)
-            ctx.fillStyle = this._color;
-            ctx.closePath()
-            ctx.fill()
-        }
-    }
+}
+
+
 }
 

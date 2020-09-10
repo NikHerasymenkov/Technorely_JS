@@ -9,18 +9,15 @@ export class Triangle extends Shape {
         this._color = options.color;
     }
 
-    triangleDraw = () => {
-        const canvas = document.querySelector('canvas')
-        const ctx = canvas.getContext("2d")
-        if (ctx) {
-            ctx.save()
-            ctx.beginPath()
-            ctx.fillStyle = this._color;
-            ctx.moveTo(this._x / 2, this._y);
-            ctx.lineTo(this._x * 2, this._y - 150);
-            ctx.lineTo(this._x / 2, this._y * 6);
-            ctx.fill();
-            ctx.closePath()
+  draw = () => {
+this._getContext()
+      this.ctx.save()
+      this.ctx.beginPath()
+      this.ctx.fillStyle = this._color;
+      this.ctx.moveTo(this._x / 2, this._y);
+      this.ctx.lineTo(this._x * 2, this._y - 150);
+      this.ctx.lineTo(this._x / 2, this._y * 6);
+      this.ctx.fill();
+      this.ctx.closePath()
         }
-    }
 }
