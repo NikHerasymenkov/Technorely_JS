@@ -1,1 +1,0 @@
-# Technorely_JS
