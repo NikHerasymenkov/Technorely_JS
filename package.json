@@ -1,0 +1,32 @@
+{
+  "name": "technorely_js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint:css":"eslint --fix --ext .js",
+    "format": "prettier --write ./*\"*{.html,.css,.js}\"",
+    "dev": "parcel -p 3000 watch ./*/*.html --out-dir dist --no-cache"
+  },
+  "author": "HerasymenkovNikita",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.11.5",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.5",
+    "eslint": "^7.10.0",
+    "prettier": "2.1.2"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikHerasymenkov/Technorely_JS.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/NikHerasymenkov/Technorely_JS/issues"
+  },
+  "homepage": "https://github.com/NikHerasymenkov/Technorely_JS#readme"
+}
